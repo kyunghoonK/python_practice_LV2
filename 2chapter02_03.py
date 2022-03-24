@@ -54,3 +54,11 @@ print(car2._details['price'])
 
 # 가격정보(인상 전)
 print(car1.get_price())
+print(car2.get_price())
+
+# 가격 인상(클래스 메소드 미사용)
+Car.price_per_raise = 1.4
+
+# 가격정보(인상 후)
+print(car1.get_price_culc())
+print(car2.get_price_culc())
